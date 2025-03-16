@@ -36,13 +36,6 @@ export default function ProductItem({
     toast.success('Added To Cart')
   };
 
-  useEffect(()=>{
-    let updateTotalPrice = 0
-    addedProducts.map(product => {
-      updateTotalPrice += product.total
-    })
-    setTotalPrice(updateTotalPrice)
-  },)
 
   return (
     <>

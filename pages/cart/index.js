@@ -11,6 +11,18 @@ export default function Cart({
 }) {
 
 
+  useEffect(() => {
+    let updateTotalPrice = 0
+    if(!addedProducts.length){
+        setTotalPrice(updateTotalPrice)
+        return
+    }
+    addedProducts.forEach(product => {
+      updateTotalPrice += product.total
+    })
+    setTotalPrice(updateTotalPrice)
+  }, );
+
   return (
     <>
       <div className="cart-info pt-32">

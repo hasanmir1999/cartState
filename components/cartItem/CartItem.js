@@ -13,6 +13,9 @@ export default function CartItem({
   setAddedToCart,
   setTotalPrice,
 }) {
+
+
+
   const increaseHandler = () => {
     const updateAddedProducts = [...addedProducts];
     updateAddedProducts.map((product) => {
@@ -48,17 +51,7 @@ export default function CartItem({
     toast.success('The product was removed from the cart')
   };
 
-  useEffect(() => {
-    let updateTotalPrice = 0
-    if(!addedProducts.length){
-        setTotalPrice(updateTotalPrice)
-        return
-    }
-    addedProducts.forEach(product => {
-      updateTotalPrice += product.total
-    })
-    setTotalPrice(updateTotalPrice)
-  }, );
+
 
   return (
     <>
