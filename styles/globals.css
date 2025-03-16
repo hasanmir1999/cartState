@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'tailwindcss';
+
+*{
+  font-family: 'Poppins';
+}
+
+.Container{
+  margin: 0 auto;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .Container{
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Container{
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Container{
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1526px) {
+  .Container{
+    width: 1400px;
+  }
+}
